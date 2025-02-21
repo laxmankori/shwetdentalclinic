@@ -7,6 +7,7 @@ function handleMenu(){
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener("click", function(event) {
       event.preventDefault(); // Prevent default navigation if needed
+      
       // Add your logic here
       navDialog.classList.toggle('hidden')
       const targetId = this.getAttribute("href").substring(1); // Get the target section ID
@@ -32,7 +33,7 @@ window.onscroll = function () {
   
   // Scroll smoothly to the top
   function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: -1, behavior: "smooth" });
   }
   
 
