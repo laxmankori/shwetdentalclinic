@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.overlay_effect{
+    background-image: linear-gradient(-90deg,rgba(41, 216, 219, 0.80) 30%,rgba(1 ,87, 140,0.80) -70%);
+    background-color: transparent;
+}
+
+/* #29d8db */
+/* #01578c */
+
+.shadow_effect div:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.shadow_2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;  /* Start hidden */
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Delays for staggered effect */
+.fade-in.delay-1 { animation-delay: 0.5s; }
+.fade-in.delay-2 { animation-delay: 1s; }
+.fade-in.delay-3 { animation-delay: 1.5s; }
